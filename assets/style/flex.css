@@ -1,0 +1,110 @@
+/* cabecalho */
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 33px;
+}
+
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.destaques {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.destaques__barra{
+    flex-grow: 1;
+}
+
+.eventos,
+.agenda {
+    display: flex;
+    flex-direction: column;
+}
+
+.eventos__lista, .agenda__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.eventos__item, .agenda__item {
+    flex-grow: 1;
+    max-width: 420px;
+}
+
+.eventos__botao, 
+.agenda__botao {
+    align-self: end;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+.rodape__logo{
+    align-self: end;
+}
+
+
+
+
+@media (max-width: 719px) {
+    .menu__item:nth-child(1){
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 720px) {
+    .menu {
+        column-gap: 75px;
+    }
+
+    .eventos__lista, .agenda__lista{
+        justify-content: end;
+    }
+}
+
+.categorias__lista {
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 0.8rem;
+}
+
+
+@media (min-width: 1440px) {
+
+    .menu {
+        justify-content: space-between;
+    }
+
+    .menu__item:nth-child(1){
+        order: 1;
+    }
+    .menu__item:nth-child(2){
+        order: 3;
+    }
+    .menu__item:nth-child(3){
+        order: 4;
+    }
+    .menu__item:nth-child(4){
+        order: 5;
+    }
+    .menu__item:nth-child(5){
+        order: 2;
+    }
+
+}
